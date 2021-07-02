@@ -1,10 +1,10 @@
 apply plugin: 'java'
 
-group = 'com.swisscom.springfundamentals'
+group = 'ch.zuehlke.springfundamentals'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = JavaVersion.VERSION_11
 
-repositories {
+repositories {gradle
     jcenter()
 }
 
