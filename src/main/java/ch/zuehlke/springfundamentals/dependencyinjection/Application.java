@@ -1,4 +1,4 @@
-package com.zuehlke.springfundamentals.dependencyinjection;
+package ch.zuehlke.springfundamentals.dependencyinjection;
 
 public class Application {
 
