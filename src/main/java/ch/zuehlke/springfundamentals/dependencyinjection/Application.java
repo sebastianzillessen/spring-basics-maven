@@ -1,19 +1,17 @@
 package ch.zuehlke.springfundamentals.dependencyinjection;
 
 import ch.zuehlke.springfundamentals.dependencyinjection.controller.CustomerController;
-import ch.zuehlke.springfundamentals.dependencyinjection.dataaccess.CustomerLoader;
-import ch.zuehlke.springfundamentals.dependencyinjection.service.EmailService;
-import ch.zuehlke.springfundamentals.dependencyinjection.service.PostalService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan
 public class Application {
 
   public static void main(String[] args) {
+    ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
 
-    EmailService emailService = new EmailService();
-    PostalService postalService = new PostalService();
-    CustomerLoader customerLoader = new CustomerLoader();
-
-    CustomerController customerController = new CustomerController(emailService, postalService, customerLoader);
+    CustomerController customerController = context.getBean(CustomerController.class);
 
     customerController.deactivateCustomerAccount("1");
   }

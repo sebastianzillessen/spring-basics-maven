@@ -2,7 +2,10 @@ package ch.zuehlke.springfundamentals.dependencyinjection.service;
 
 import ch.zuehlke.springfundamentals.dependencyinjection.dataaccess.CustomerLoader;
 import ch.zuehlke.springfundamentals.dependencyinjection.domain.Customer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CustomerService {
 
   private static final String DEACTIVATION_MESSAGE = "Your customer account has been successfully removed";
@@ -10,6 +13,7 @@ public class CustomerService {
   private final PostalService postalService;
   private final CustomerLoader customerLoader;
 
+  @Autowired
   public CustomerService(EmailService emailService, PostalService postalService, CustomerLoader customerLoader) {
     this.emailService = emailService;
     this.postalService = postalService;
