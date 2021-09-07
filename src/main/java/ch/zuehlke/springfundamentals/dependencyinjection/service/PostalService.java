@@ -1,6 +1,6 @@
-package com.swisscom.springfundamentals.dependencyinjection.service;
+package ch.zuehlke.springfundamentals.dependencyinjection.service;
 
-import com.swisscom.springfundamentals.dependencyinjection.domain.MailingAddress;
+import ch.zuehlke.springfundamentals.dependencyinjection.domain.MailingAddress;
 
 public class PostalService {
 

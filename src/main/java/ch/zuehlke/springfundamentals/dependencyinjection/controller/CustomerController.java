@@ -1,9 +1,9 @@
-package com.swisscom.springfundamentals.dependencyinjection.controller;
+package ch.zuehlke.springfundamentals.dependencyinjection.controller;
 
-import com.swisscom.springfundamentals.dependencyinjection.dataaccess.CustomerLoader;
-import com.swisscom.springfundamentals.dependencyinjection.service.CustomerService;
-import com.swisscom.springfundamentals.dependencyinjection.service.EmailService;
-import com.swisscom.springfundamentals.dependencyinjection.service.PostalService;
+import ch.zuehlke.springfundamentals.dependencyinjection.dataaccess.CustomerLoader;
+import ch.zuehlke.springfundamentals.dependencyinjection.service.CustomerService;
+import ch.zuehlke.springfundamentals.dependencyinjection.service.EmailService;
+import ch.zuehlke.springfundamentals.dependencyinjection.service.PostalService;
 
 public class CustomerController {
 
