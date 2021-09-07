@@ -11,6 +11,7 @@ public class RemoteCustomerLoader implements CustomerLoader {
   @Override
   public Customer findById(String customerId) {
     try {
+      System.out.println("MAKING A REMOTE CALL...");
       Thread.sleep(5000);
     } catch (InterruptedException e) {
       e.printStackTrace();

@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class Application {
 
   public static void main(String[] args) {
+    System.out.println("Application started");
     ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
 
     CustomerController customerController = context.getBean(CustomerController.class);
