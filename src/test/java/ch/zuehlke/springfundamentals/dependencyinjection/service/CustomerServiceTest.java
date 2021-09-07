@@ -1,17 +1,9 @@
-package com.zuehlke.springfundamentals.dependencyinjection.service;
+package ch.zuehlke.springfundamentals.dependencyinjection.service;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-
-import com.zuehlke.springfundamentals.dependencyinjection.dataaccess.CustomerLoader;
-import com.zuehlke.springfundamentals.dependencyinjection.domain.Customer;
-import com.zuehlke.springfundamentals.dependencyinjection.domain.MailingAddress;
-import org.junit.Test;
 
 public class CustomerServiceTest {
 

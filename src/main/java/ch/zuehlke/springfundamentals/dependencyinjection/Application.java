@@ -1,6 +1,6 @@
-package com.zuehlke.springfundamentals.dependencyinjection;
+package ch.zuehlke.springfundamentals.dependencyinjection;
 
-import com.zuehlke.springfundamentals.dependencyinjection.controller.CustomerController;
+import ch.zuehlke.springfundamentals.dependencyinjection.controller.CustomerController;
 
 public class Application {
 
