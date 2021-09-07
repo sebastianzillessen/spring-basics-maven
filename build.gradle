@@ -1,16 +1,16 @@
 apply plugin: 'java'
 
-group = 'com.swisscom.springfundamentals'
+group = 'ch.zuehlke.springfundamentals'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = JavaVersion.VERSION_11
 
-repositories {
+repositories {gradle
     jcenter()
 }
 
 dependencies {
-    implementation 'org.springframework:spring-core:5.3.2'
-    implementation 'org.springframework:spring-context:5.3.2'
+    implementation 'org.springframework:spring-core:5.3.6'
+    implementation 'org.springframework:spring-context:5.3.6'
 
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.mockito:mockito-core:2.24.5'
