@@ -4,8 +4,14 @@ import ch.zuehlke.springfundamentals.dependencyinjection.service.CustomerService
 
 public class CustomerController {
 
+  private final CustomerService customerService;
+
+  public CustomerController(CustomerService customerService) {
+    this.customerService = customerService;
+  }
+
   public void deactivateCustomerAccount(String customerId) {
-    CustomerService customerService = new CustomerService();
+    CustomerService customerService = this.customerService;
     customerService.deactivateCustomer(customerId);
   }
 }
