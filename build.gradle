@@ -1,12 +1,16 @@
 apply plugin: 'java'
 
+group = 'ch.zuehlke.springfundamentals'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_17
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.springframework:spring-core:5.3.9'
-    implementation 'org.springframework:spring-context:5.3.9'
+    implementation 'org.springframework:spring-core:5.3.20'
+    implementation 'org.springframework:spring-context:5.3.20'
 
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.mockito:mockito-core:2.24.5'
