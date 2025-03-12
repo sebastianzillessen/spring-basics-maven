@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Application (Prod Profile)" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="ch.zuehlke.springfundamentals.dependencyinjection.Application" />
-    <module name="spring-basics.main" />
+    <module name="demo" />
     <option name="VM_PARAMETERS" value="-Dspring.profiles.active=prod" />
     <extension name="coverage">
       <pattern>
